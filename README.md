@@ -14,7 +14,7 @@
 12) emacs Dockerfile
 13) remove the line starting with "RUN     groupadd -g 1000" and all lines below it
 14) docker build .
-15) docker tag {hexidecimal number reported at the end of step 10} cmspkuewk-image
+15) docker tag {hexidecimal number reported at the end of the previous step} cmspkuewk-image
 16) docker run -d --name gitlab-runner --restart always -v /srv/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v /afs:/afs -v /cvmfs:/cvmfs gitlab/gitlab-runner:latest
 17) docker exec -it gitlab-runner gitlab-runner register
 18) emacs -nw /srv/gitlab-runner/config/config.toml 
