@@ -8,9 +8,10 @@
 7) mkdir cmspkuewk-container
 8) cd cmspkuewk-container
 9) wget https://raw.githubusercontent.com/clelange/cmssw-docker/master/cc7-cms/Dockerfile
-10) docker build .
-11) docker tag {hexidecimal number reported at the end of step 10} cmspkuewk-image
-12) docker run -d --name gitlab-runner --restart always -v /srv/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v /afs:/afs -v /cvmfs:/cvmfs gitlab/gitlab-runner:latest
-13) docker exec -it gitlab-runner gitlab-runner register
-14) emacs -nw /srv/gitlab-runner/config/config.toml 
+10) remove the line starting with "RUN     groupadd -g 1000" and all lines below it
+11) docker build .
+12) docker tag {hexidecimal number reported at the end of step 10} cmspkuewk-image
+13) docker run -d --name gitlab-runner --restart always -v /srv/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v /afs:/afs -v /cvmfs:/cvmfs gitlab/gitlab-runner:latest
+14) docker exec -it gitlab-runner gitlab-runner register
+15) emacs -nw /srv/gitlab-runner/config/config.toml 
 
