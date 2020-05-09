@@ -3,7 +3,7 @@
 1) Go to https://openstack.cern.ch/project/instances/.
 2) Launch a CC7 x86_64 m4.large machine.
 3) ssh to the machine from lxplus (e.g. [amlevin@lxplus085 ~]$ ssh amlevin@amlevin8)
-4) yum install emacs wget
+4) yum -y install emacs wget
 5) curl -sSL https://get.docker.com/ | sh
 6) service docker start
 7) mkdir cmspkuewk-container
