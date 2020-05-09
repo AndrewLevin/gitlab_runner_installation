@@ -1,7 +1,7 @@
 # gitlab_runner_installation
 
 1) Go to https://openstack.cern.ch/project/instances/.
-2) Launch a CC7 x86_64 m4.large machine.
+2) Launch a CC7 x86_64 m2.large machine.
 3) ssh to the machine from lxplus (e.g. [amlevin@lxplus085 ~]$ ssh amlevin@amlevin8)
 4) yum -y install emacs wget
 5) locmap --enable cvmfs
