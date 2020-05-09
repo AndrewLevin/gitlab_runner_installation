@@ -6,7 +6,7 @@
 4) yum -y install emacs wget
 5) locmap --enable cvmfs
 6) locmap --enable cvmfs
-7) curl -sSL https://get.docker.com/ | sh
+7) curl -sSL https://get.docker.com/ | sh 
 8) service docker start
 9) mkdir cmspkuewk-container
 10) cd cmspkuewk-container
@@ -20,3 +20,6 @@
 18) emacs -nw /srv/gitlab-runner/config/config.toml 
 19) add the line under [runners.docker]: pull_policy = "if-not-present"
 20) change volumes = ["/cache"] to volumes = ["/cache",'/afs:/afs','/cvmfs:/cvmfs']
+
+References:
+https://docs.gitlab.com/runner/install/docker.html
