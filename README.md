@@ -19,7 +19,7 @@
 17) docker exec -it gitlab-runner gitlab-runner register
 18) emacs -nw /srv/gitlab-runner/config/config.toml 
 19) add the line under [runners.docker]: pull_policy = "if-not-present"
-20) change volumes = ["/cache"] to volumes = ["/cache",'/afs:/afs','/cvmfs:/cvmfs']
+20) change volumes = ["/cache"] to volumes = ["/cache","/afs:/afs","/cvmfs:/cvmfs"]
 
 References:
 
