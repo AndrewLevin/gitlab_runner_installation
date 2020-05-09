@@ -5,7 +5,7 @@
 3) ssh to the machine from lxplus (e.g. [amlevin@lxplus085 ~]$ ssh amlevin@amlevin8)
 4) yum -y install emacs wget
 5) locmap --enable cvmfs
-6) locmap --enable cvmfs
+6) locmap --configure cvmfs
 7) curl -sSL https://get.docker.com/ | sh 
 8) service docker start
 9) mkdir cmspkuewk-container
