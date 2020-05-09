@@ -11,7 +11,7 @@
 9) mkdir cmspkuewk-container
 10) cd cmspkuewk-container
 11) wget https://raw.githubusercontent.com/clelange/cmssw-docker/master/cc7-cms/Dockerfile
-12) emacs Dockerfile
+12) emacs -nw Dockerfile
 13) remove the line starting with "RUN     groupadd -g 1000" and all lines below it
 14) docker build .
 15) docker tag {hexidecimal number reported at the end of the previous step} cmspkuewk-image
