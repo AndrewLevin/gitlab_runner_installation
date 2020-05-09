@@ -11,4 +11,5 @@
 [root@amlevin23 ~]# docker tag XXXXXXXXX cmspkuewk-image
 [root@amlevin23 ~]# docker run -d --name gitlab-runner --restart always -v /srv/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v /afs:/afs -v /cvmfs:/cvmfs gitlab/gitlab-runner:latest
 [root@amlevin23 ~]# docker exec -it gitlab-runner gitlab-runner register
+[root@amlevin23 ~]# emacs -nw /srv/gitlab-runner/config/config.toml 
 ```
