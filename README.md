@@ -9,7 +9,7 @@
 8) cd cmspkuewk-container
 9) wget https://raw.githubusercontent.com/clelange/cmssw-docker/master/cc7-cms/Dockerfile
 10) docker build .
-11) docker tag XXXXXXXXX cmspkuewk-image
+11) docker tag {hex number reported at the end of step 10)} cmspkuewk-image
 12) docker run -d --name gitlab-runner --restart always -v /srv/gitlab-runner/config:/etc/gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v /afs:/afs -v /cvmfs:/cvmfs gitlab/gitlab-runner:latest
 13) docker exec -it gitlab-runner gitlab-runner register
 14) emacs -nw /srv/gitlab-runner/config/config.toml 
